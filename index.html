@@ -1,310 +1,228 @@
 <!doctype html>
 
 
-
-  
-
-
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
 
+    <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
 
 
+    <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"/>
 
+    <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css"/>
 
 
+    <meta name="keywords" content="Hexo, NexT"/>
 
 
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1"/>
 
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="程序猿tx">
+    <meta property="og:url" content="http://huangshujia.me/index.html">
+    <meta property="og:site_name" content="程序猿tx">
+    <meta property="og:locale" content="zh-Hans">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="程序猿tx">
 
 
+    <script type="text/javascript" id="hexo.configurations">
+        var NexT = window.NexT || {};
+        var CONFIG = {
+            root: '/',
+            scheme: 'Mist',
+            sidebar: {
+                "position": "left",
+                "display": "post",
+                "offset": 12,
+                "offset_float": 0,
+                "b2t": false,
+                "scrollpercent": false
+            },
+            fancybox: true,
+            motion: true,
+            duoshuo: {
+                userId: '0',
+                author: '博主'
+            },
+            algolia: {
+                applicationID: '',
+                apiKey: '',
+                indexName: '',
+                hits: {"per_page": 10},
+                labels: {
+                    "input_placeholder": "Search for Posts",
+                    "hits_empty": "We didn't find any results for the search: ${query}",
+                    "hits_stats": "${hits} results found in ${time} ms"
+                }
+            }
+        };
+    </script>
 
 
+    <link rel="canonical" href="http://huangshujia.me/"/>
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="解螺旋的矿工">
-<meta property="og:url" content="http://huangshujia.me/index.html">
-<meta property="og:site_name" content="解螺旋的矿工">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解螺旋的矿工">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://huangshujia.me/"/>
-
-
-
-
-
-  <title>解螺旋的矿工</title>
+    <title>程序猿tx</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  
 
-
-
-
-
-  <script type="text/javascript">
+<script type="text/javascript">
     var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9091dc3354962cd0705c6a0c94b8a931";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?9091dc3354962cd0705c6a0c94b8a931";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
     })();
-  </script>
+</script>
 
 
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
+<div class="container sidebar-position-left
    page-home 
  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">解螺旋的矿工</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
+        <div class="header-inner">
+            <div class="site-brand-wrapper">
+                <div class="site-meta ">
 
 
+                    <div class="custom-logo-site-title">
+                        <a href="/" class="brand" rel="start">
+                            <span class="logo-line-before"><i></i></span>
+                            <span class="site-title">程序猿tx</span>
+                            <span class="logo-line-after"><i></i></span>
+                        </a>
+                    </div>
 
- </div>
+                    <p class="site-subtitle"></p>
+
+                </div>
+
+                <div class="site-nav-toggle">
+                    <button>
+                        <span class="btn-bar"></span>
+                        <span class="btn-bar"></span>
+                        <span class="btn-bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="site-nav">
+
+
+                <ul id="menu" class="menu">
+
+
+                    <li class="menu-item menu-item-home">
+                        <a href="/" rel="section">
+
+                            <i class="menu-item-icon fa fa-fw fa-home"></i> <br/>
+
+                            首页
+                        </a>
+                    </li>
+
+
+                    <li class="menu-item menu-item-archives">
+                        <a href="/archives" rel="section">
+
+                            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>
+
+                            归档
+                        </a>
+                    </li>
+
+
+                    <li class="menu-item menu-item-categories">
+                        <a href="/categories" rel="section">
+
+                            <i class="menu-item-icon fa fa-fw fa-th"></i> <br/>
+
+                            分类
+                        </a>
+                    </li>
+
+
+                    <li class="menu-item menu-item-tags">
+                        <a href="/tags" rel="section">
+
+                            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br/>
+
+                            标签
+                        </a>
+                    </li>
+
+
+                    <li class="menu-item menu-item-about">
+                        <a href="/about" rel="section">
+
+                            <i class="menu-item-icon fa fa-fw fa-user"></i> <br/>
+
+                            关于
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </nav>
+
+
+        </div>
     </header>
 
     <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
+        <div class="main-inner">
+            <div class="content-wrap">
+                <div id="content" class="content">
 
-  
+                    <section id="posts" class="posts-expand">
 
-  
-  
-  
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2018/03/30/2018-03-30-I-am-helixminer.html">
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2018/03/30/2018-03-30-I-am-helixminer.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/30/2018-03-30-I-am-helixminer.html" itemprop="url">我是解螺旋的矿工，我热爱生命科学</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link" href="/2018/03/30/2018-03-30-I-am-helixminer.html"
+                                       itemprop="url">我是解螺旋的矿工，我热爱生命科学</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -323,8 +241,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -356,26 +274,23 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/03/30/2018-03-30-I-am-helixminer.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/03/30/2018-03-30-I-am-helixminer.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/03/30/2018-03-30-I-am-helixminer.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2018/03/30/2018-03-30-I-am-helixminer.html" class="leancloud_visitors" data-flag-title="我是解螺旋的矿工，我热爱生命科学">
+
+                                    <span id="/2018/03/30/2018-03-30-I-am-helixminer.html" class="leancloud_visitors"
+                                          data-flag-title="我是解螺旋的矿工，我热爱生命科学">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -385,101 +300,76 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-这应该是首次正式地介绍这个公众号，我想通过这篇文章让大家能够更好地了解『解螺旋的矿工』。 
-其实，我在2015年就注册了这个公众号，当时名字叫：泛基因（fungenomics）——还有一个同名小网站。从时间上来讲应该说注册得还算早，但惭愧的是毫无敏感度，对“媒体”的力量一无所知，自己自然也不重视
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/30/2018-03-30-I-am-helixminer.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2018/03/23/2018-03-23-WGS-Best-Practics-2.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                这应该是首次正式地介绍这个公众号，我想通过这篇文章让大家能够更好地了解『程序猿tx』。
+                                其实，我在2015年就注册了这个公众号，当时名字叫：泛基因（fungenomics）——还有一个同名小网站。从时间上来讲应该说注册得还算早，但惭愧的是毫无敏感度，对“媒体”的力量一无所知，自己自然也不重视
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn" href="/2018/03/30/2018-03-30-I-am-helixminer.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2018/03/23/2018-03-23-WGS-Best-Practics-2.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/23/2018-03-23-WGS-Best-Practics-2.html" itemprop="url">GATK4.0和全基因组数据分析实践（下）</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link" href="/2018/03/23/2018-03-23-WGS-Best-Practics-2.html"
+                                       itemprop="url">GATK4.0和全基因组数据分析实践（下）</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -498,8 +388,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -531,26 +421,23 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/03/23/2018-03-23-WGS-Best-Practics-2.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/03/23/2018-03-23-WGS-Best-Practics-2.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/03/23/2018-03-23-WGS-Best-Practics-2.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2018/03/23/2018-03-23-WGS-Best-Practics-2.html" class="leancloud_visitors" data-flag-title="GATK4.0和全基因组数据分析实践（下）">
+
+                                    <span id="/2018/03/23/2018-03-23-WGS-Best-Practics-2.html"
+                                          class="leancloud_visitors" data-flag-title="GATK4.0和全基因组数据分析实践（下）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -560,101 +447,78 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-前言在上一篇文章中我已经用例子仔细跟大家分享了WGS从原始数据到变异数据（Fastq-&gt;VCF）的具体执行过程。那么，在这一篇文章里，我们就来好好谈谈后续非常重要的一个环节——也是本次实践分析的最后一个部分—— 变异的质控。
-什么是质控？我们不妨先给它下个定义：质控的含义和目的是指通过一定
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/23/2018-03-23-WGS-Best-Practics-2.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                前言在上一篇文章中我已经用例子仔细跟大家分享了WGS从原始数据到变异数据（Fastq-&gt;VCF）的具体执行过程。那么，在这一篇文章里，我们就来好好谈谈后续非常重要的一个环节——也是本次实践分析的最后一个部分——
+                                变异的质控。
+                                什么是质控？我们不妨先给它下个定义：质控的含义和目的是指通过一定
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn" href="/2018/03/23/2018-03-23-WGS-Best-Practics-2.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html" itemprop="url">关于Indel，我该往左还是该往右</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link"
+                                       href="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html"
+                                       itemprop="url">关于Indel，我该往左还是该往右</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -673,8 +537,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -706,26 +570,24 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html#comments" itemprop="discussionUrl">
+                <a href="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html#comments"
+                   itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html" class="leancloud_visitors" data-flag-title="关于Indel，我该往左还是该往右">
+
+                                    <span id="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html"
+                                          class="leancloud_visitors" data-flag-title="关于Indel，我该往左还是该往右">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -735,103 +597,81 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-实质上，两种做法都可以。但是在NGS数据分析中，约定俗成的做法是：左移（left alignment）！然而也有一种情况是例外，当变异使用的是HGVS规则命名的时候，它们却是右移（right alignment）！
-在探讨这个问题之前，我们来理解一下为什么Indel需要左移或者右移。
-
-首先，会
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                实质上，两种做法都可以。但是在NGS数据分析中，约定俗成的做法是：左移（left
+                                alignment）！然而也有一种情况是例外，当变异使用的是HGVS规则命名的时候，它们却是右移（right alignment）！
+                                在探讨这个问题之前，我们来理解一下为什么Indel需要左移或者右移。
+
+                                首先，会
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn"
+                                       href="/2018/03/01/2018-03-01-LeftAlignment-Or-RightAlignment-For-Indel.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html" itemprop="url">我如何看待用1公斤DNA存储全球信息这个事情</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link"
+                                       href="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html"
+                                       itemprop="url">我如何看待用1公斤DNA存储全球信息这个事情</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -850,8 +690,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -883,26 +723,24 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html#comments" itemprop="discussionUrl">
+                <a href="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html#comments"
+                   itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html" class="leancloud_visitors" data-flag-title="我如何看待用1公斤DNA存储全球信息这个事情">
+
+                                    <span id="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html"
+                                          class="leancloud_visitors" data-flag-title="我如何看待用1公斤DNA存储全球信息这个事情">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -912,101 +750,78 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-最近发现关于DNA存储的文章刷屏了，源自于今年2月19号华盛顿大学和微软研究院合作在《Nature biotechnology》上发表的一篇有关DNA存储的研究成果。对此我想发表一点自己的观点，受限于我的认知，观点不一定正确。
-诚然，进入21世纪之后，这个世界的数据增长速度太快了，数据量级越来越
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2018/02/20/2018-02-20-WGS-Best-Practics.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                最近发现关于DNA存储的文章刷屏了，源自于今年2月19号华盛顿大学和微软研究院合作在《Nature
+                                biotechnology》上发表的一篇有关DNA存储的研究成果。对此我想发表一点自己的观点，受限于我的认知，观点不一定正确。
+                                诚然，进入21世纪之后，这个世界的数据增长速度太快了，数据量级越来越
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn"
+                                       href="/2018/02/24/2018-02-24-What-Do-I-Think-About-DNA-storage.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2018/02/20/2018-02-20-WGS-Best-Practics.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/20/2018-02-20-WGS-Best-Practics.html" itemprop="url">GATK4.0和全基因组数据分析实践（上）</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link" href="/2018/02/20/2018-02-20-WGS-Best-Practics.html"
+                                       itemprop="url">GATK4.0和全基因组数据分析实践（上）</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1025,8 +840,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1058,26 +873,23 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/02/20/2018-02-20-WGS-Best-Practics.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/02/20/2018-02-20-WGS-Best-Practics.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/02/20/2018-02-20-WGS-Best-Practics.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2018/02/20/2018-02-20-WGS-Best-Practics.html" class="leancloud_visitors" data-flag-title="GATK4.0和全基因组数据分析实践（上）">
+
+                                    <span id="/2018/02/20/2018-02-20-WGS-Best-Practics.html" class="leancloud_visitors"
+                                          data-flag-title="GATK4.0和全基因组数据分析实践（上）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1087,100 +899,76 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-前言在前面的一系列WGS文章中，我讲述了很多基因数据分析的来龙去脉，虽然许多同学觉得很有帮助，但是却缺了一个重要的环节——没有提供实际可用的数据来实战完成具体的流程，不能得到直观的体会。许多读者也纷纷在后台留言反馈这个问题，特别是在我写了如何入门生物信息学的文章之后情况尤甚。所以我决定要再写一篇
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/20/2018-02-20-WGS-Best-Practics.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                前言在前面的一系列WGS文章中，我讲述了很多基因数据分析的来龙去脉，虽然许多同学觉得很有帮助，但是却缺了一个重要的环节——没有提供实际可用的数据来实战完成具体的流程，不能得到直观的体会。许多读者也纷纷在后台留言反馈这个问题，特别是在我写了如何入门生物信息学的文章之后情况尤甚。所以我决定要再写一篇
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn" href="/2018/02/20/2018-02-20-WGS-Best-Practics.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html" itemprop="url">我如何看待今日央视宣布我国启动“中国10万人基因组计划”</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link"
+                                       href="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html"
+                                       itemprop="url">我如何看待今日央视宣布我国启动“中国10万人基因组计划”</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1199,8 +987,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1221,26 +1009,24 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html#comments" itemprop="discussionUrl">
+                <a href="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html#comments"
+                   itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html" class="leancloud_visitors" data-flag-title="我如何看待今日央视宣布我国启动“中国10万人基因组计划”">
+
+                                    <span id="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html"
+                                          class="leancloud_visitors" data-flag-title="我如何看待今日央视宣布我国启动“中国10万人基因组计划”">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1250,104 +1036,81 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-​我今天下午第一时间看到这个研究计划的时候，正在买东西，第一反应是：可惜了！
-以下是我的愚蠢看法，各位请吐槽。
-
-它应该算是目前国内 最有上层优势的一个大规模中国人群基因组研究项目——新闻里说的是首个重大国家计划。
-但说实话，据我所知自十三五之后，国内这两年里并不乏这类研究项目。例如，福建厦门的
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                ​我今天下午第一时间看到这个研究计划的时候，正在买东西，第一反应是：可惜了！
+                                以下是我的愚蠢看法，各位请吐槽。
+
+                                它应该算是目前国内 最有上层优势的一个大规模中国人群基因组研究项目——新闻里说的是首个重大国家计划。
+                                但说实话，据我所知自十三五之后，国内这两年里并不乏这类研究项目。例如，福建厦门的
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn"
+                                       href="/2017/12/28/2017-12-28-What-Do-I-Think-About-The-100K-Chinese-Genome-Project.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html" itemprop="url">该如何自学入门生物信息学</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link"
+                                       href="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html"
+                                       itemprop="url">该如何自学入门生物信息学</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1366,8 +1129,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1399,26 +1162,24 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html#comments" itemprop="discussionUrl">
+                <a href="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html#comments"
+                   itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html" class="leancloud_visitors" data-flag-title="该如何自学入门生物信息学">
+
+                                    <span id="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html"
+                                          class="leancloud_visitors" data-flag-title="该如何自学入门生物信息学">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1428,101 +1189,77 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-前几天在知乎上，我看到了这么一个问题“如何自学生物信息学？”，看了一圈回答后，发现很多答主自己也是初学者，可能还在摸索中，回答也并没有真正抓到重点。作为一个过来人，我觉得这个问题其实还挺重要的，相信也困扰着不少人，因此在这里我想尝试回答一下这个问题。
-什么是生物信息学生物信息学与以往的传统生物学
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2017/12/07/2017-12-06-How-To-Use-Pysam.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                前几天在知乎上，我看到了这么一个问题“如何自学生物信息学？”，看了一圈回答后，发现很多答主自己也是初学者，可能还在摸索中，回答也并没有真正抓到重点。作为一个过来人，我觉得这个问题其实还挺重要的，相信也困扰着不少人，因此在这里我想尝试回答一下这个问题。
+                                什么是生物信息学生物信息学与以往的传统生物学
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn"
+                                       href="/2017/12/16/2017-12-16-How-To-Learn-Bioinformatics-By-Yourself.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2017/12/07/2017-12-06-How-To-Use-Pysam.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/07/2017-12-06-How-To-Use-Pysam.html" itemprop="url">如何使用Python处理BAM</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link" href="/2017/12/07/2017-12-06-How-To-Use-Pysam.html"
+                                       itemprop="url">如何使用Python处理BAM</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1541,8 +1278,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1574,26 +1311,23 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/12/07/2017-12-06-How-To-Use-Pysam.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/12/07/2017-12-06-How-To-Use-Pysam.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/12/07/2017-12-06-How-To-Use-Pysam.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2017/12/07/2017-12-06-How-To-Use-Pysam.html" class="leancloud_visitors" data-flag-title="如何使用Python处理BAM">
+
+                                    <span id="/2017/12/07/2017-12-06-How-To-Use-Pysam.html" class="leancloud_visitors"
+                                          data-flag-title="如何使用Python处理BAM">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1603,100 +1337,76 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-在上一篇的文章里我详细介绍了BAM（SAM/CRAM）的格式和一些需要注意的细节，还说了该如何使用samtools在命令行中对其进行操作。但是很多时候这些操作是不能满足我们的实际需要的，比如统计比对率、计算在某个比对质量值之上的read有多少，或者计算PE比对的插入片段长度分布，甚至需要你根据实
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/07/2017-12-06-How-To-Use-Pysam.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                在上一篇的文章里我详细介绍了BAM（SAM/CRAM）的格式和一些需要注意的细节，还说了该如何使用samtools在命令行中对其进行操作。但是很多时候这些操作是不能满足我们的实际需要的，比如统计比对率、计算在某个比对质量值之上的read有多少，或者计算PE比对的插入片段长度分布，甚至需要你根据实
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn" href="/2017/12/07/2017-12-06-How-To-Use-Pysam.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html" itemprop="url">从零开始完整学习全基因组测序数据分析：第5节 理解并操作BAM文件</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link"
+                                       href="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html"
+                                       itemprop="url">从零开始完整学习全基因组测序数据分析：第5节 理解并操作BAM文件</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1715,8 +1425,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1748,26 +1458,25 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html#comments" itemprop="discussionUrl">
+                <a href="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html#comments"
+                   itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html" class="leancloud_visitors" data-flag-title="从零开始完整学习全基因组测序数据分析：第5节 理解并操作BAM文件">
+
+                                    <span id="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html"
+                                          class="leancloud_visitors"
+                                          data-flag-title="从零开始完整学习全基因组测序数据分析：第5节 理解并操作BAM文件">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1777,101 +1486,78 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-经过了第四节的长文，我想大家基本上已经知道了一个WGS流程该如何构建起来了吧。但在那一节中限于篇幅有两个很重要的文件我没能展开来讲，分别是：BAM和VCF文件。这篇我们先说BAM文件。
-什么是BAMBAM是目前基因数据分析中最通用的比对数据存储格式，它既适合于短read也适合于长read，最长可
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
+                                </div>
+                            </header>
 
-  
 
-  
-  
-  
+                            <div class="post-body" itemprop="articleBody">
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://huangshujia.me/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                经过了第四节的长文，我想大家基本上已经知道了一个WGS流程该如何构建起来了吧。但在那一节中限于篇幅有两个很重要的文件我没能展开来讲，分别是：BAM和VCF文件。这篇我们先说BAM文件。
+                                什么是BAMBAM是目前基因数据分析中最通用的比对数据存储格式，它既适合于短read也适合于长read，最长可
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn"
+                                       href="/2017/11/27/2017-11-27-Begining-WGS-Data-Analysis-BAM-CRAM-And-SAM.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                        <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+                            <link itemprop="mainEntityOfPage"
+                                  href="http://huangshujia.me/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html">
+
+                            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shujia Huang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="解螺旋的矿工">
+                            <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿tx">
     </span>
 
-    
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html" itemprop="url">从零开始完整学习全基因组测序（WGS）数据分析：第4节 构建WGS主流程</a></h1>
-        
+                            <header class="post-header">
 
-        <div class="post-meta">
+
+                                <h1 class="post-title" itemprop="name headline">
+
+                                    <a class="post-title-link"
+                                       href="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html"
+                                       itemprop="url">从零开始完整学习全基因组测序（WGS）数据分析：第4节 构建WGS主流程</a></h1>
+
+
+                                <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1890,8 +1576,8 @@
             
           </span>
 
-          
-            <span class="post-category" >
+
+                                    <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1923,26 +1609,25 @@
                 
               
             </span>
-          
 
-          
-            
-              <span class="post-comments-count">
+
+                                    <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html#comments" itemprop="discussionUrl">
+                <a href="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html#comments"
+                   itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html"
+                        itemprop="commentCount"></span>
                 </a>
               </span>
-            
-          
 
-          
-          
-             <span id="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html" class="leancloud_visitors" data-flag-title="从零开始完整学习全基因组测序（WGS）数据分析：第4节 构建WGS主流程">
+
+                                    <span id="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html"
+                                          class="leancloud_visitors"
+                                          data-flag-title="从零开始完整学习全基因组测序（WGS）数据分析：第4节 构建WGS主流程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1952,150 +1637,121 @@
                
                  <span class="leancloud-visitors-count"></span>
              </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           
-这篇文章很长，超过1万字，是本系列中最重要的一篇，因为我并非只是在简单地告诉大家几条硬邦邦的操作命令。对于新手而言不建议碎片时间阅读，对于有一定经验的老手来说，相信依然可以有所收获。在开始之前，我想先说一句：流程的具体形式其实是次要的，WGS本质上只是一个技术手段，重要的是，我们要明白自己所要解
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+                                </div>
+                            </header>
 
 
-
-          </div>
-          
+                            <div class="post-body" itemprop="articleBody">
 
 
-          
+                                这篇文章很长，超过1万字，是本系列中最重要的一篇，因为我并非只是在简单地告诉大家几条硬邦邦的操作命令。对于新手而言不建议碎片时间阅读，对于有一定经验的老手来说，相信依然可以有所收获。在开始之前，我想先说一句：流程的具体形式其实是次要的，WGS本质上只是一个技术手段，重要的是，我们要明白自己所要解
+                                ...
+                                <!--noindex-->
+                                <div class="post-button text-center">
+                                    <a class="btn"
+                                       href="/2017/09/19/2017-09-19-Begining-WGS-Data-Analysis-The-pipeline.html#more"
+                                       rel="contents">
+                                        阅读全文 &raquo;
+                                    </a>
+                                </div>
+                                <!--/noindex-->
 
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
 
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
+                            </div>
 
-      
+                            <div>
 
-      
+                            </div>
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.jpg"
-               alt="Shujia Huang" />
-          <p class="site-author-name" itemprop="name">Shujia Huang</p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
+                            <div>
 
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">40</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <footer class="post-footer">
+
+
+                                <div class="post-eof"></div>
+
+                            </footer>
+                        </article>
+
+
+                    </section>
+
+
+                    <nav class="pagination">
+                        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span
+                            class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a
+                            class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+                    </nav>
+
+
+                </div>
+
+
             </div>
-          
 
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
+
+            <div class="sidebar-toggle">
+                <div class="sidebar-toggle-line-wrap">
+                    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+                    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+                    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+                </div>
             </div>
-          
 
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">48</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-inner">
 
-        </nav>
 
-        
+                    <section class="site-overview sidebar-panel sidebar-panel-active">
+                        <div class="site-author motion-element" itemprop="author" itemscope
+                             itemtype="http://schema.org/Person">
+                            <img class="site-author-image" itemprop="image"
+                                 src="/images/avatar.jpg"
+                                 alt="Shujia Huang"/>
+                            <p class="site-author-name" itemprop="name">Shujia Huang</p>
 
-        <div class="links-of-author motion-element">
+                            <p class="site-description motion-element" itemprop="description"></p>
+
+                        </div>
+                        <nav class="site-state motion-element">
+
+
+                            <div class="site-state-item site-state-posts">
+                                <a href="/archives">
+                                    <span class="site-state-item-count">40</span>
+                                    <span class="site-state-item-name">日志</span>
+                                </a>
+                            </div>
+
+
+                            <div class="site-state-item site-state-categories">
+                                <a href="/categories/index.html">
+                                    <span class="site-state-item-count">17</span>
+                                    <span class="site-state-item-name">分类</span>
+                                </a>
+                            </div>
+
+
+                            <div class="site-state-item site-state-tags">
+                                <a href="/tags/index.html">
+                                    <span class="site-state-item-count">48</span>
+                                    <span class="site-state-item-name">标签</span>
+                                </a>
+                            </div>
+
+
+                        </nav>
+
+
+                        <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
@@ -2106,8 +1762,8 @@
                   GitHub
                 </a>
               </span>
-            
-              <span class="links-of-author-item">
+
+                            <span class="links-of-author-item">
                 <a href="https://www.weibo.com/huangshujia2011" target="_blank" title="Weibo">
                   
                     <i class="fa fa-fw fa-weibo"></i>
@@ -2115,8 +1771,8 @@
                   Weibo
                 </a>
               </span>
-            
-              <span class="links-of-author-item">
+
+                            <span class="links-of-author-item">
                 <a href="https://www.zhihu.com/people/yellowtree" target="_blank" title="Zhihu">
                   
                     <i class="fa fa-fw fa-globe"></i>
@@ -2124,287 +1780,201 @@
                   Zhihu
                 </a>
               </span>
-            
-          
+
+
+                        </div>
+
+
+                    </section>
+
+
+                </div>
+            </aside>
+
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="footer-inner">
+            <div class="copyright">
+
+                &copy;
+                <span itemprop="copyrightYear">2018</span>
+                <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Shujia Huang</span>
-</div>
+                <span class="author" itemprop="copyrightHolder">Shujia Huang</span>
+            </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
+            <div class="powered-by">
+                由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+            </div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
+            <div class="theme-info">
+                主题 -
+                <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+                    NexT.Mist
+                </a>
+            </div>
 
 
-        
-
-        
-      </div>
+        </div>
     </footer>
 
-    
-      <div class="back-to-top">
+
+    <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-  </div>
+    </div>
 
-  
+
+</div>
+
 
 <script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+        window.Promise = null;
+    }
 </script>
 
 
+<script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
 
+<script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
 
+<script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
 
-
-  
-
+<script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
 
+<script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
+<script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
+<script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+<script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
 
 
+<script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
 
 
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script id="dsq-count-scr" src="https://huangshujia.disqus.com/count.js" async></script>
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
-
-
-
-  
-
-
-  
-
-    
-      <script id="dsq-count-scr" src="https://huangshujia.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("PG9NA27zW2WuxmCMvOMlxzua-gzGzoHsz", "VMwO1UNTnT8FgGg411rzjALa");</script>
-  <script>
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("PG9NA27zW2WuxmCMvOMlxzua-gzGzoHsz", "VMwO1UNTnT8FgGg411rzjALa");</script>
+<script>
     function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
+        var query = new AV.Query(Counter);
+        var entries = [];
+        var $visitors = $(".leancloud_visitors");
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
+        $visitors.each(function () {
+            entries.push($(this).attr("id").trim());
         });
+
+        query.containedIn('url', entries);
+        query.find()
+            .done(function (results) {
+                var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+                if (results.length === 0) {
+                    $visitors.find(COUNT_CONTAINER_REF).text(0);
+                    return;
+                }
+
+                for (var i = 0; i < results.length; i++) {
+                    var item = results[i];
+                    var url = item.get('url');
+                    var time = item.get('time');
+                    var element = document.getElementById(url);
+
+                    $(element).find(COUNT_CONTAINER_REF).text(time);
+                }
+                for (var i = 0; i < entries.length; i++) {
+                    var url = entries[i];
+                    var element = document.getElementById(url);
+                    var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                    if (countSpan.text() == '') {
+                        countSpan.text(0);
+                    }
+                }
+            })
+            .fail(function (object, error) {
+                console.log("Error: " + error.code + " " + error.message);
+            });
     }
 
     function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
+        var $visitors = $(".leancloud_visitors");
+        var url = $visitors.attr('id').trim();
+        var title = $visitors.attr('data-flag-title').trim();
+        var query = new AV.Query(Counter);
 
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
+        query.equalTo("url", url);
+        query.find({
+            success: function (results) {
+                if (results.length > 0) {
+                    var counter = results[0];
+                    counter.fetchWhenSave(true);
+                    counter.increment("time");
+                    counter.save(null, {
+                        success: function (counter) {
+                            var $element = $(document.getElementById(url));
+                            $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                        },
+                        error: function (counter, error) {
+                            console.log('Failed to save Visitor num, with error message: ' + error.message);
+                        }
+                    });
+                } else {
+                    var newcounter = new Counter();
+                    /* Set ACL */
+                    var acl = new AV.ACL();
+                    acl.setPublicReadAccess(true);
+                    acl.setPublicWriteAccess(true);
+                    newcounter.setACL(acl);
+                    /* End Set ACL */
+                    newcounter.set("title", title);
+                    newcounter.set("url", url);
+                    newcounter.set("time", 1);
+                    newcounter.save(null, {
+                        success: function (newcounter) {
+                            var $element = $(document.getElementById(url));
+                            $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                        },
+                        error: function (newcounter, error) {
+                            console.log('Failed to create');
+                        }
+                    });
+                }
+            },
+            error: function (error) {
+                console.log('Error:' + error.code + " " + error.message);
+            }
+        });
     }
 
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        if ($('.leancloud_visitors').length == 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
     });
-  </script>
+</script>
 
 
-
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
+<script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
           inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
@@ -2412,23 +1982,22 @@
           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
         }
       });
-    </script>
 
-    <script type="text/x-mathjax-config">
+
+</script>
+
+<script type="text/x-mathjax-config">
       MathJax.Hub.Queue(function() {
         var all = MathJax.Hub.getAllJax(), i;
         for (i=0; i < all.length; i += 1) {
           all[i].SourceElement().parentNode.className += ' has-jax';
         }
       });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
 
 
-  
+</script>
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-  
 
 </body>
 </html>
