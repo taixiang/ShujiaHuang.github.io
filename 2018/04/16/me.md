@@ -1,4 +1,4 @@
-很高兴认识大家，这里是自己搭的博客
+很高兴认识大家，这里是我的博客
 同时欢迎大家关注我的微信号  
 ![image.png](https://upload-images.jianshu.io/upload_images/7569533-cfeb1f55473a2143.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
