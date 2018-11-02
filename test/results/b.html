@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>单选题</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <script src="jquery.min.js"></script>
+
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .report-error {
+      /*position: fixed;*/
+      right: 0.3rem;
+      bottom: 0.3rem;
+      color: #3DCC6D;
+      text-decoration:underline;
+      z-index: 1;
+      font-size: 0.2rem;
+      cursor: pointer;
+      margin-right: 0.3rem;
+      float: right;
+    }
+
+    .defines {
+      margin-bottom: 0.1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="content"></div>
+    <div id="reportError" class="report-error">我要报错!</div>
+  </div>
+</body>
+
+<script src="common.js"></script>
+
+<script src="data.js"></script>
+<script>
+  var com = components.create('#content', {
+    type: 1
+  })
+  com.beforeRender = function (qus, options) {
+    var a = {}
+    if (qus.question) {
+      com.dom.addClass('ztype' + qus.question.qtype)
+      components.createDifficult(com.dom, qus)
+      components.createAnalysis(com.dom, qus, qus.question.analysis)
+    } else {
+      com.dom.addClass('ztype' + qus.qtype)
+      a = {
+        data: qus.mchoices_set || [],
+        ans: qus.my_answer.answer || []
+      }
+      components.createAnswers(com.dom, a, {
+        title: qus.title,
+        label: parseInt(qus.order) + 1
+      })
+      components.createDifficult(com.dom, qus)
+      components.createAnalysis(com.dom, qus, qus.analysis)
+    }
+  }
+
+  $('#reportError').click(function() {
+
+  })
+
+  // 测试区域
+  function test() {
+    com.render(res1)
+
+    setTimeout(function() {
+//      com.render(res)
+    }, 3000)
+  }
+  test()
+</script>
+
+</html>

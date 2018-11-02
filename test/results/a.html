@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>单选题</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <script src="jquery.min.js"></script>
+
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .def-body {
+            padding-bottom: 0.3rem;
+        }
+
+        .def-body *:first-child {
+            margin-top: 0 !important;
+        }
+
+        .def-body *:last-child {
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div id="content"></div>
+</div>
+</body>
+
+<script src="common.js"></script>
+<script src="data.js"></script>
+
+<script>
+
+    console.log($("html").height())
+
+
+    var com = components.create('#content', {
+        type: 0
+    })
+    com.beforeRender = function (qus, options) {
+        var a = {}
+        if (qus.question) {
+            com.dom.addClass('ztype' + qus.question.qtype)
+            components.createQuestionBody(com.dom, qus.question.title)
+            if (qus.question.qtype === 0 || qus.question.qtype === 1) {
+                a = {
+                    data: qus.question.choices_set || [],
+                    ans: qus.my_answer.answer || []
+                }
+                components.createAnswers(com.dom, a)
+            }
+        } else {
+            com.dom.addClass('ztype' + qus.qtype)
+            components.createQuestionBody(com.dom, qus.title)
+        }
+    }
+
+
+    // 测试区域
+    function test() {
+        com.render(res)
+
+        setTimeout(function () {
+//      com.render(res1)
+        }, 3000)
+    }
+
+    test()
+
+</script>
+
+</html>

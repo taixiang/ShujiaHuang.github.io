@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>单选题</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <script src="jquery.min.js"></script>
+    <script src="dsbridge.js"></script>
+
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .page-title {
+            margin-bottom: 2rem;
+        }
+        .next {
+            position: fixed;
+            right: 0.08rem;
+            bottom: 0.28rem;
+            z-index: 1;
+        }
+
+        .next img {
+            width: 1.03rem;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="page-title" id="title">
+    </div>
+    <div id="choice"></div>
+    <div id="next" style="display: none;" class="next">
+        <img src="data:image/png;base64,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" alt="">
+    </div>
+</div>
+</body>
+
+<script src="common.js"></script>
+<script>
+
+    var res = {
+        "uuid": "RWWxddQdec8gP6Ve4dzapK",
+        "get_difficulty_display": "0.4",
+        "classification": "单选题",
+        "mark": 12,
+        "question": {
+            "choices_set": [
+                {
+                    "is_answer": 0,
+                    "uuid": "BiwTLbN53oGoqTgH6Hx9EK",
+                    "body": "<p>①③</p>"
+                },
+                {
+                    "is_answer": 0,
+                    "uuid": "kZgfbx8zyZYqKeY3hQByMD",
+                    "body": "<p>②④</p>"
+                },
+                {
+                    "is_answer": 0,
+                    "uuid": "qxHHkqc282FMEVakv8FqwV",
+                    "body": "<p>①④</p>"
+                },
+                {
+                    "is_answer": 1,
+                    "uuid": "cUKjpiPoAEHejLLMrokGfe",
+                    "body": "<p>②③</p>"
+                }
+            ],
+            "title": "设函数<img src=\"http://equation.kaoyanvip.cn/?mml=%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmi%3Ef%3C%2Fmi%3E%3Cmfenced%3E%3Cmrow%3E%3Cmi%3Ex%3C%2Fmi%3E%3Cmo%3E%2C%3C%2Fmo%3E%3Cmi%3Ey%3C%2Fmi%3E%3C%2Fmrow%3E%3C%2Fmfenced%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmfenced%20open%3D%22%7B%22%20close%3D%22%22%3E%3Cmtable%20columnalign%3D%22left%22%3E%3Cmtr%3E%3Cmtd%3E%3Cmi%3Ex%3C%2Fmi%3E%3Cmi%3Ey%3C%2Fmi%3E%3Cmi%3Esin%3C%2Fmi%3E%3Cmfrac%3E%3Cmn%3E1%3C%2Fmn%3E%3Cmsqrt%3E%3Cmsup%3E%3Cmi%3Ex%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsup%3E%3Cmo%3E%2B%3C%2Fmo%3E%3Cmsup%3E%3Cmi%3Ey%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsup%3E%3C%2Fmsqrt%3E%3C%2Fmfrac%3E%3Cmo%3E%2C%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmsup%3E%3Cmi%3Ex%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsup%3E%3Cmo%3E%2B%3C%2Fmo%3E%3Cmsup%3E%3Cmi%3Ey%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsup%3E%3Cmo%3E%26%23x2260%3B%3C%2Fmo%3E%3Cmn%3E0%3C%2Fmn%3E%3Cmo%3E%2C%3C%2Fmo%3E%3C%2Fmtd%3E%3C%2Fmtr%3E%3Cmtr%3E%3Cmtd%3E%3Cmn%3E0%3C%2Fmn%3E%3Cmo%3E%2C%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmsup%3E%3Cmi%3Ex%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsup%3E%3Cmo%3E%2B%3C%2Fmo%3E%3Cmsup%3E%3Cmi%3Ey%3C%2Fmi%3E%3Cmn%3E2%3C%2Fmn%3E%3C%2Fmsup%3E%3Cmo%3E%3D%3C%2Fmo%3E%3Cmn%3E0%3C%2Fmn%3E%3Cmo%3E%2C%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3Cmo%3E%26%23xA0%3B%3C%2Fmo%3E%3C%2Fmtd%3E%3C%2Fmtr%3E%3C%2Fmtable%3E%3C%2Fmfenced%3E%3C%2Fmath%3E\" alt=\"<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>f</mi><mfenced><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></mfenced><mo>=</mo><mfenced open=&quot;{&quot; close=&quot;&quot;><mtable columnalign=&quot;left&quot;><mtr><mtd><mi>x</mi><mi>y</mi><mi>sin</mi><mfrac><mn>1</mn><msqrt><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></msqrt></mfrac><mo>,</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>&amp;#x2260;</mo><mn>0</mn><mo>,</mo></mtd></mtr><mtr><mtd><mn>0</mn><mo>,</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>,</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo><mo>&amp;#xA0;</mo></mtd></mtr></mtable></mfenced></math>\" class=\"wiris-tex\">则<img src=\"http://equation.kaoyanvip.cn/?mml=%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmi%3Ef%3C%2Fmi%3E%3Cmo%3E(%3C%2Fmo%3E%3Cmi%3Ex%3C%2Fmi%3E%3Cmo%3E%2C%3C%2Fmo%3E%3Cmi%3Ey%3C%2Fmi%3E%3Cmo%3E)%3C%2Fmo%3E%3C%2Fmath%3E\" alt=\"<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>f</mi><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></math>\" class=\"wiris-tex\">在点<img src=\"http://equation.kaoyanvip.cn/?mml=%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmo%3E(%3C%2Fmo%3E%3Cmn%3E0%3C%2Fmn%3E%3Cmo%3E%2C%3C%2Fmo%3E%3Cmn%3E0%3C%2Fmn%3E%3Cmo%3E)%3C%2Fmo%3E%3C%2Fmath%3E\" alt=\"<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>\" class=\"wiris-tex\">处\n",
+            "transverse": 0,
+            "analysis": "<p>价值规律包括两方面的内容：第一，商品的价值量由生产该商品所需要的社会必要劳动时间决定；第二，商品交换以价值量为基础，实行等价交换。因此，选项②③正确。选项①，价格围绕价值上下波动只是价值规律的表现形式，故不选。选项④，价值规律可能造成商品生产者的两极分化也不是价值规律的内容，只能说是价值规律的作用，故不选。</p>",
+            "video": "",
+            "hasaudio": 0,
+            "right_answer": [
+                "cUKjpiPoAEHejLLMrokGfe"
+            ],
+            "uuid": "WUQWtAPhHg8SFdLCeSYcPb",
+            "qtype": 0,
+            "url": "",
+            "audio": "",
+            "hasvideo": 0,
+            "hasurl": 0
+        },
+        "year": null,
+        "exam_question": "NgnwwkumUAt6FmdSCrze9T"
+    };
+
+
+
+
+    var choice = $('#choice')
+
+    function render(res) {
+
+        $('#title').html(res.question.title)
+        QuestionUtils.itemData = function (rowIndex, question) {
+            return question.choices_set || []
+        }
+        QuestionUtils.getStore = function (rowIndex, question) {
+            return question.myAnswer || []
+        }
+        QuestionUtils.render(choice, [res.question], {
+            title: false,
+            onSelected: function (qtype, curStore, rowIndex) {
+                var value = {
+                    key: rowIndex,
+                    value: curStore.getValues()
+                }
+                console.log('value :', value);
+
+                dsBridge.call("jsToNative", JSON.stringify(value), function (res) {
+                });
+
+            }
+        })
+
+        // 如果是多选题
+        if (res.question.qtype === 1) {
+            $('#next').show()
+        } else {
+            $('#next').hide()
+        }
+
+    }
+
+
+    render(res);
+
+//    $("#choice").css("pointer-events","none");
+
+    var dbclicklock = false
+    $('#next').click(function() {
+        if (!dbclicklock) {
+            dbclicklock = true
+            setTimeout(function() {
+                dbclicklock = false
+            }, 1000);
+            // code
+            console.log('code')
+            dsBridge.call("next", "", function (res) {
+            });
+        }
+    })
+
+
+    //接收android 题目内容
+    dsBridge.register('nativeToJs', function (data) {
+
+        console.log("》》》》》》》》》》  接收题目1111 ");
+
+        var res = JSON.parse(data);
+        render(res)
+
+    });
+
+    dsBridge.register('choice_disable', function (data) {
+        $("#choice").css("pointer-events","none");
+    });
+
+
+
+
+</script>
+
+</html>

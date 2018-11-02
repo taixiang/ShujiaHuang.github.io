@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 100px;
+    }
+
+    @media screen and (max-width: 750px) {
+      html {
+        font-size: 13.333vw;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      color: #212121;
+    }
+
+    .wrapper {
+      max-width: 750px;
+      font-size: 0.26rem;
+    }
+
+    .subtitle {
+      margin-bottom: 0.1rem;
+      font-weight: bold;
+      font-size: 0.33rem;
+      color: #212121;
+    }
+
+    .date {
+      margin-bottom: 0.15rem;
+      color: #999999;
+      font-size: 0.13rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .rich-text p {
+      margin-bottom: 0.1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="app">
+      <div class="subtitle"></div>
+      <div class="date"></div>
+      <div class="rich-text"></div>
+    </div>
+  </div>
+  <script>
+    function render(jsonstr) {
+      // var data = JSON.parse(jsonstr)
+      var el = document.getElementById('app');
+      var data = {
+        "title": "这是一个重要的测试",
+        "subtitle": "这是一个重要的测试",
+        "detail": "<p>这是一个重要的测试这是一个重要的wefwef测试这是\"一个\"重要的测试这1516516.....3w5e1f3wwefw是一个重要的测试</p >",
+        "time_text": "2018-09-20 14:50:31"
+      }
+      el.querySelector('.subtitle').innerHTML = data.subtitle
+      el.querySelector('.date').innerHTML = data.time_text
+      el.querySelector('.rich-text').innerHTML = data.detail
+    }
+
+    render()
+  </script>
+</body>
+
+</html>

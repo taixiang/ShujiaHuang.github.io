@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <script src="jquery.min.js"></script>
+
+    <link rel="stylesheet" href="common.css">
+    <style>
+
+        .wrapper{
+            padding-top: 0.1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <div id="choice"></div>
+</div>
+</body>
+
+<script src="common.js"></script>
+<script>
+
+    var res = {
+        "index":2,
+        "video": "",
+        "exam_question": "szc38dKYtaU4imW6rGnHJe",
+        "uuid": "3dheF85KtDAjUPph8XZaKH",
+        "order": 0,
+        "audio": "",
+        "hasvideo": 0,
+        "get_qtype_display": "多选题",
+        "right_answer": [
+            "DcQbpUN9rvAAjP3uqfsjRY",
+            "nGnntdQnGALbBccvw2kxbY"
+        ],
+        "mark": 3,
+        "hasaudio": 0,
+        "url": "",
+        "analysis": "3242342",
+        "title": "41341",
+        "qtype": 1,
+        "mchoices_set": [
+            {
+                "get_is_answer_display": "否",
+                "add_time": "2018-06-08T11:37:09.696509+08:00",
+                "body": "25235",
+                "uuid": "DSiJJmMbxTuRc8xCaLGEJe",
+                "is_answer": 0
+            },
+            {
+                "get_is_answer_display": "是",
+                "add_time": "2018-06-08T11:37:09.738593+08:00",
+                "body": "253<img src=\"http://equation.kaoyanvip.cn/?mml=%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmsqrt%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmsqrt%3E%3C%2Fmath%3E\" alt=\"<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msqrt><mn>1</mn></msqrt></math>\" class=\"wiris-tex\"><img src=\"http://equation.kaoyanvip.cn/?mml=%3Cmath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1998%2FMath%2FMathML%22%3E%3Cmroot%3E%3Cmn%3E3%3C%2Fmn%3E%3Cmn%3E1%3C%2Fmn%3E%3C%2Fmroot%3E%3C%2Fmath%3E\" alt=\"<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mroot><mn>3</mn><mn>1</mn></mroot></math>\" class=\"wiris-tex\">",
+                "uuid": "DcQbpUN9rvAAjP3uqfsjRY",
+                "is_answer": 1
+            },
+            {
+                "get_is_answer_display": "是",
+                "add_time": "2018-06-08T11:37:09.769076+08:00",
+                "body": "<img src=\"http://oss.kaoyanvip.cn/question/sGtpN533VKgEKSk2shVW26.jpeg\" alt=\"1528339798(1).jpg\">",
+                "uuid": "nGnntdQnGALbBccvw2kxbY",
+                "is_answer": 1
+            },
+            {
+                "get_is_answer_display": "否",
+                "add_time": "2018-06-08T11:37:09.787710+08:00",
+                "body": "<img src=\"http://equation.kaoyanvip.cn/?tex=dfr*ss\" alt=\"dfr*ss\" class=\"formula-tex\">",
+                "uuid": "S5VGhW574piV7SD2M9tB3L",
+                "is_answer": 0
+            }
+        ],
+        "hasurl": 0,
+        "myAnswer":[0,1,2]
+    }
+
+    var choice = $('#choice')
+
+    function render(res) {
+
+
+        QuestionUtils.itemData = function (rowIndex, question) {
+            return question.mchoices_set || []
+        }
+        QuestionUtils.getStore = function (rowIndex, question) {
+            return question.myAnswer || []
+        }
+        QuestionUtils.render(choice, [res], {
+            title: true,
+            onSelected: function (qtype, curStore, rowIndex) {
+                var value = {
+                    key: rowIndex,
+                    value: curStore.getValues()
+                }
+                console.log('value :', value);
+            }
+        })
+
+    }
+
+    render(res)
+</script>
+
+</html>
